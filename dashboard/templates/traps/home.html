@@ -1,0 +1,9 @@
+Hi
+
+<h1>The list of traps</h1>
+        {% for trap in traps %}
+            <h2>{{ trap.device}}</h2>
+            <h2>{{ trap.time }}</h2>
+            <h2>{{ trap.data }}</h2>
+            <p>Generated  on {{ trap.created }}</p>
+        {% endfor %}
